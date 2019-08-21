@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from "react";
 import { initialState, Reducer } from "../reducers/reducer";
 import moment from "moment";
-import { Input, Button, Card, Segment } from "semantic-ui-react";
+import { Input, Button, Card, Segment, Header } from "semantic-ui-react";
 
 // use reducer hook to get array of todos and display them with .map and TodoItem
 function TodoList() {
@@ -33,6 +33,7 @@ function TodoList() {
 
   return (
     <div>
+      <Header as="h1" className="head">Todo</Header>
       <div className="form">
         <Input
           type="text"
